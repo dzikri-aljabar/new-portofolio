@@ -1,5 +1,3 @@
-import Swal from 'sweetalert2'
-
 const toggleBtn = document.getElementById('toggleBtn');
 const menu = document.getElementById('menu');
 
