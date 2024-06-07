@@ -25,7 +25,7 @@
           <li><a href="#project" class="hover:font-bold hover:text-[#EF9F07]">Project</a></li>
           <li><a href="#contact" class="hover:font-bold hover:text-[#EF9F07]">Contact</a></li>
         </ul>
-        <button class="text-white hidden md:block p-2 bg-transparent rounded border border-[#EF9F07] hover:bg-[#EF9F07]" onclick="downloadPDF()">Download CV</button>
+        <a href="assets/CV-dzikri.pdf" download class="text-white hidden md:block p-2 bg-transparent rounded border border-[#EF9F07] hover:bg-[#EF9F07]">Download CV</a>
         <div class="md:hidden" id="toggleBtn">
           <i class="fa-solid fa-bars md:hidden text-lg text-white"></i>
         </div>
@@ -36,7 +36,7 @@
           <li><a href="#service" class="hover:font-bold hover:text-[#EF9F07]">Serivce</a></li>
           <li><a href="#project" class="hover:font-bold hover:text-[#EF9F07]">Project</a></li>
           <li><a href="#contact" class="hover:font-bold hover:text-[#EF9F07]">Contact</a></li>
-          <a href="#" class="text-white p-2 bg-transparent rounded border border-[#EF9F07] hover:bg-[#EF9F07]">Download CV</a>
+          <a href="assets/CV-dzikri.pdf" download class="text-white p-2 bg-transparent rounded border border-[#EF9F07] hover:bg-[#EF9F07]">Download CV</a>
         </ul>
       </div>
     </nav>
@@ -206,19 +206,6 @@
         imageAlt: "Custom image"
         });
       }
-
-      function downloadPDF() {
-    // URL ke file PDF
-    var pdfURL = 'assets/CV-dzikri.pdf';
-
-    // Membuat elemen anchor untuk mengunduh file PDF
-    var link = document.createElement('a');
-    link.href = pdfURL;
-    link.download = 'CV-dzikri.pdf'; // Nama file yang akan diunduh
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-}
     </script>
   </body>
 </html>
