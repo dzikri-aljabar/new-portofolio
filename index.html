@@ -46,8 +46,7 @@
         <div class="flex flex-col text-white">
           <h4 class="text-2xl">Hii I am</h4>
           <h4 class="text-2xl font-bold text-[#EF9F07]">Dzikri Aljabar</h4>
-          <h4 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-gradient-from-A2DFDE-to-74BAB8">Fullstack Web</h4>
-          <h4 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-gradient-from-A2DFDE-to-74BAB8 mb-5">Developer</h4>
+          <h4 class="text-3xl md:py-2 sm:text-5xl md:text-6xl lg:text-7xl font-bold text-gradient-from-A2DFDE-to-74BAB8 mb-5"><span class="auto-type"></span></h4>
           <p class="font-normal text-justify  md:w-[29rem] mb-5">
             Hello digital world! I am a web developer with a passion for creating sites that are not only visually appealing but also function well. Let's see what I have created!
           </p>
@@ -195,6 +194,15 @@
     </footer>
     
     <script src="script.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed('.auto-type', {
+        strings: ['Fullstack Web <br> Developer', 'UI/UX <br> Designer'],
+        typeSpeed: 100,
+        backSpeed: 80,
+        loop: true
+      });
+    </script>
     <script>
       function email() {
       Swal.fire({
