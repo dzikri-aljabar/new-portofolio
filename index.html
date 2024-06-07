@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html class="scroll-smooth">
   <head>
-    <title>Portofolio | Dzikri Aljabar</title>
+    <title>Portfolio | Dzikri Aljabar</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
@@ -18,14 +18,14 @@
   <body class="bg-slate-900">
     <nav class="py-9 px-4 fixed top-0 left-0 right-0 z-50">
       <div class="container max-w-6xl mx-auto p-3 rounded-xl flex justify-between items-center bg-navbar">
-        <h1 class="text-2xl font-bold text-gradient-from-A2DFDE-to-74BAB8">Portofolio</h1>
+        <span class="text-2xl font-bold text-gradient-from-A2DFDE-to-74BAB8">Portfolio</span>
         <ul class="text-white hidden md:flex gap-x-11">
           <li><a href="#about" class="hover:font-bold hover:text-[#EF9F07]">About</a></li>
           <li><a href="#service" class="hover:font-bold hover:text-[#EF9F07]">Serivce</a></li>
           <li><a href="#project" class="hover:font-bold hover:text-[#EF9F07]">Project</a></li>
           <li><a href="#contact" class="hover:font-bold hover:text-[#EF9F07]">Contact</a></li>
         </ul>
-        <a href="#" class="text-white hidden md:block p-2 bg-transparent rounded border border-[#EF9F07] hover:bg-[#EF9F07]">Download CV</a>
+        <button class="text-white hidden md:block p-2 bg-transparent rounded border border-[#EF9F07] hover:bg-[#EF9F07]" onclick="downloadPDF()">Download CV</button>
         <div class="md:hidden" id="toggleBtn">
           <i class="fa-solid fa-bars md:hidden text-lg text-white"></i>
         </div>
@@ -56,7 +56,7 @@
           </div>
         </div>
         <div class="flex flex-row mt-8 md:mt-0 items-center justify-center md:justify-end">
-          <img src="/assets/image-1.png" class="w-3/4 md:w-3/5" />
+          <img src="/assets/image-1.png" class=" w-3/4 md:w-3/5" />
         </div>
       </div>
     </section>
@@ -138,16 +138,23 @@
         <div class="bg-white px-4 py-1 rounded">UI/UX</div>
       </div>
       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-3 p-8">
-        <div class="card bg-white rounded-xl p-3">
-          <img src="assets/image 6.jpg" class="border-2 rounded-lg">
-            <div class="p-2">
-              <h4 class="font-semibold">Registration Website</h4>
-              <div class="mb-2">
-                <p class="text-xs">Website with PHP technology developed also with the Bootsrap CSS framework</p>
-              </div>
-              <a href="https://pptq10.smktaq-wsb.sch.id/psb/" class="p-1 rounded text-white bg-[#EF9F07]">View More</a>
-            </div>
+      <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+        <a href="https://pptq10.smktaq-wsb.sch.id/psb/">
+            <img class="rounded-t-lg" src="assets/image 6.jpg" alt="" />
+        </a>
+        <div class="p-5">
+            <a href="https://pptq10.smktaq-wsb.sch.id/psb/">
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Registration Website</h5>
+            </a>
+            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Website with PHP technology developed also with the Bootsrap CSS framework</p>
+            <a href="https://pptq10.smktaq-wsb.sch.id/psb/" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white rounded-lg bg-[#EF9F07] focus:ring-4 focus:outline-none">
+                Read more
+                <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                </svg>
+            </a>
         </div>
+      </div>
       </div>
     </section>
 
@@ -199,6 +206,19 @@
         imageAlt: "Custom image"
         });
       }
+
+      function downloadPDF() {
+    // URL ke file PDF
+    var pdfURL = 'assets/CV-dzikri.pdf';
+
+    // Membuat elemen anchor untuk mengunduh file PDF
+    var link = document.createElement('a');
+    link.href = pdfURL;
+    link.download = 'CV-dzikri.pdf'; // Nama file yang akan diunduh
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+}
     </script>
   </body>
 </html>
