@@ -12,8 +12,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Galdeano&display=swap" rel="stylesheet" />
     <!-- Tailwind CSS v3 CDN -->
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    <link rel="canonical" href="https://dzikri-aljabar.com/" />
-    <meta name="google-site-verification" content="QZC4ZlRq6SI9Y4PiBm69rCFletHSW0EljMZEwnBf2i4" />
     <script>
       tailwind.config = {
         theme: {
@@ -87,7 +85,6 @@
         font-style: normal;
       }
     </style>
-    <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
@@ -110,65 +107,84 @@
     </nav>
     <!-- END: Navigation -->
     <!-- BEGIN: Hero Section -->
-    <main class="relative min-h-screen grid-bg pt-32 md:pt-20 pb-20 px-4 md:px-8 flex flex-col items-center overflow-hidden">
-      <!-- Hero Heading -->
-      <div class="text-center max-w-5xl z-10">
-        <h1 class="text-3xl md:text-7xl font-extrabold leading-tight tracking-tight mb-5 galdeano-regular">
-          Hey, I'm <span class="text-white">Dzikri Aljabar.</span><br />
-          <span class="text-neon-lime text-glow">Full Stack Developer</span><br />
-        </h1>
-        <p class="text-zinc-400 text-md md:text-lg font-medium max-w-2xl mx-auto leading-relaxed">Membangun website modern, solusi digital, dan sistem yang scalable untuk sekolah, bisnis, dan startup.</p>
-        <p class="text-neon-lime text-xs mt-4 font-semibold uppercase tracking-widest">Fokus pada Laravel, Livewire, UI/UX, dan pengembangan produk digital.</p>
+    <main class="relative min-h-screen grid-bg pt-32 md:pt-20 pb-20 px-4 md:px-8 overflow-hidden">
+      <div class="mt-8 space-y-3">
+        <h1 class="text-2xl font-bold">Project Showcase</h1>
+        <p class="text-zinc-400">Silahkan pilih project yang ingin Anda lihat <span class="text-neon-lime font-galdeano font-bold text-xl">.</span></p>
       </div>
-      <!-- Main Content Area: Info Panels + Portrait -->
-      <div class="mt-9 w-full max-w-7xl grid grid-cols-1 md:grid-cols-3 gap-12 items-center">
-        <!-- Left Panel: Profile Details -->
-        <div class="space-y-12 text-left md:text-right order-2 md:order-1">
-          <section data-purpose="info-block">
-            <h3 class="text-zinc-500 text-xs font-bold uppercase tracking-[0.2em] mb-3">Bertapa di</h3>
-            <p class="text-white text-base font-semibold leading-relaxed">Temanggung, Indonesia</p>
-          </section>
-          <section data-purpose="info-block">
-            <h3 class="text-zinc-500 text-xs font-bold uppercase tracking-[0.2em] mb-3">Fokus</h3>
-            <p class="text-white text-base font-semibold leading-relaxed">Web Development, UI/UX Design, System Architecture, Startup Product Building</p>
-          </section>
-          <section data-purpose="info-block">
-            <h3 class="text-zinc-500 text-xs font-bold uppercase tracking-[0.2em] mb-3">Yang saya bangun</h3>
-            <p class="text-white text-base font-semibold leading-relaxed">Solusi digital untuk sekolah, bisnis, dan startup</p>
-          </section>
-        </div>
-        <!-- Center: Portrait -->
-        <div class="flex flex-col items-center justify-center order-1 md:order-2 relative">
-          <div class="portrait-glow"></div>
-          <div class="portrait-capsule relative group shadow-2xl shadow-zinc-900/50">
-            <!-- Main portrait image -->
-            <img alt="Zikri Aljabar" class="w-full h-full object-cover" src="assets/dreamina-2026-04-03-8307.png" />
-          </div>
-          <div class="mt-8 flex flex-col items-center gap-2 opacity-60">
-            <span class="text-[10px] font-bold uppercase tracking-[0.3em]">View Project Showcase</span>
-            <svg class="w-4 h-4 animate-bounce text-neon-lime" fill="none" stroke="currentColor" viewbox="0 0 24 24">
-              <path d="M19 9l-7 7-7-7" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"></path>
-            </svg>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mt-12">
+        <div class="relative w-full overflow-hidden rounded-xl border-2 border-white/10 hover:border-white/50">
+          <svg class="absolute top-0 left-0 -translate-x-60 -translate-y-80 -z-10" width="995" height="995" viewBox="0 0 995 995" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g filter="url(#filter0_f)">
+              <circle cx="497.5" cy="497.5" r="204.5" fill="#DFFF00" />
+            </g>
+            <defs>
+              <filter id="filter0_f" x="0.5" y="0.5" width="994" height="994" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+                <feGaussianBlur stdDeviation="146.25" result="effect1_foregroundBlur" />
+              </filter>
+            </defs>
+          </svg>
+
+          <div class="bg-white/10 backdrop-blur-md border-3 border-white/10 rounded-xl p-6">
+            <div class="flex justify-between items-center">
+              <h2 class="text-white font-semibold">Website Sekolah</h2>
+              <a href="https://smpitcahayainsani.sch.id/"><i class="fa-solid fa-arrow-up-right-from-square text-white text-lg"></i></a>
+            </div>
+            <a href="https://smpitcahayainsani.sch.id/">
+              <img src="assets/Screenshot 2025-12-27 at 22.45.14.png" alt="Preview Design" class="h-[229px] w-full object-cover mt-4 rounded" />
+            </a>
           </div>
         </div>
-        <!-- Right Panel: Achievements -->
-        <div class="space-y-12 text-left order-3">
-          <section data-purpose="info-block">
-            <h3 class="text-zinc-500 text-xs font-bold uppercase tracking-[0.2em] mb-3">Pengalaman</h3>
-            <p class="text-white text-base font-semibold leading-relaxed">Full Stack Developer, startup builder, client projects</p>
-          </section>
-          <section data-purpose="info-block">
-            <h3 class="text-zinc-500 text-xs font-bold uppercase tracking-[0.2em] mb-3">Proyek Done</h3>
-            <p class="text-white text-base font-semibold leading-relaxed">Sistem pendaftaran sekolah, platform Klikin, website bisnis, landing page, dll.</p>
-          </section>
-          <section data-purpose="info-block">
-            <h3 class="text-zinc-500 text-xs font-bold uppercase tracking-[0.2em] mb-3">Visi</h3>
-            <p class="text-white text-base font-semibold leading-relaxed">Mewujudkan solusi teknologi yang menggabungkan inovasi dan nilai bisnis yang praktis.</p>
-          </section>
+        <div class="relative w-full overflow-hidden rounded-xl border-2 border-white/10 hover:border-white/50">
+          <svg class="absolute top-0 left-0 -translate-x-60 -translate-y-80 -z-10" width="995" height="995" viewBox="0 0 995 995" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g filter="url(#filter0_f)">
+              <circle cx="497.5" cy="497.5" r="204.5" fill="#DFFF00" />
+            </g>
+            <defs>
+              <filter id="filter0_f" x="0.5" y="0.5" width="994" height="994" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+                <feGaussianBlur stdDeviation="146.25" result="effect1_foregroundBlur" />
+              </filter>
+            </defs>
+          </svg>
+
+          <div class="bg-white/10 backdrop-blur-md border-3 border-white/10 rounded-xl p-6">
+            <div class="flex justify-between items-center">
+              <h2 class="text-white font-semibold">Klikin</h2>
+              <a href="https://staging.aljabar.cloud"><i class="fa-solid fa-arrow-up-right-from-square text-white text-lg"></i></a>
+            </div>
+            <a href="https://staging.aljabar.cloud">
+              <img src="assets/Halaman Klikin.png" alt="Preview Design" class="h-[229px] w-full object-cover mt-4 rounded" />
+            </a>
+          </div>
         </div>
-      </div>
-      <div class="flex justify-center md:col-span-3 mt-12">
-        <button class="bg-neon-lime text-black px-6 py-2.5 rounded-lg animate-bounce font-bold text-sm tracking-wide hover:opacity-90 transition-all neon-glow">Lihat Proyek</button>
+        <div class="relative w-full overflow-hidden rounded-xl border-2 border-white/10 hover:border-white/50">
+          <svg class="absolute top-0 left-0 -translate-x-60 -translate-y-80 -z-10" width="995" height="995" viewBox="0 0 995 995" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g filter="url(#filter0_f)">
+              <circle cx="497.5" cy="497.5" r="204.5" fill="#DFFF00" />
+            </g>
+            <defs>
+              <filter id="filter0_f" x="0.5" y="0.5" width="994" height="994" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+                <feGaussianBlur stdDeviation="146.25" result="effect1_foregroundBlur" />
+              </filter>
+            </defs>
+          </svg>
+
+          <div class="bg-white/10 backdrop-blur-md border-3 border-white/10 rounded-xl p-6">
+            <div class="flex justify-between items-center">
+              <h2 class="text-white font-semibold">Jeep Dolan Dieng</h2>
+              <a href="https://jeepdolandieng.id"><i class="fa-solid fa-arrow-up-right-from-square text-white text-lg"></i></a>
+            </div>
+            <a href="https://jeepdolandieng.id">
+              <img src="assets/jeepdolandieng.jpg" alt="Preview Design" class="h-[229px] w-full object-cover mt-4 rounded" />
+            </a>
+          </div>
+        </div>
       </div>
     </main>
     <!-- END: Hero Section -->
